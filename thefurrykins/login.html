@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top " style="background-color: rgb(29, 153, 161)">
+        <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+           <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" height="30" width="41"></a>
+           <div class="collapse navbar-collapse" id="Navbar">
+          
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                <!--    <li class="nav-item"><a class="nav-link" href="./pettingtips.html"><span class="fa fa-info fa-lg"></span>Petting tips</a></li>-->
+                    
+                    <li class="nav-item active"><a class="nav-link" id="Contact" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>-->
+                    <li class="nav-item active"><a class="nav-link" id="Aboutus" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About Us</a></li>
+                </ul>      
+              <!--  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      </ul>-->
+    
+                       <!-- <span class="navbar-text navbar-nav navbar-right">
+                            <a data-toggle="modal"class="button btn btn-success" data-target="#loginModal"href="./login.html">
+                            <span class="fa fa-sign-in"></span> 
+                          Login &nbsp
+                            </a>
+                            
+                        </span>
+                        <br>
+                      <!--  <span class="navbar-text navbar-nav navbar-right">
+                            <a data-toggle="modal" class="button btn btn-primary" data-target="#loginModal">
+                                <span class="fa fa-user-o"></span>
+                          sign Up
+                    
+                        </span>-->
+
+                   
+                </div>
+            </div>
+            </nav>
+  <br>
+  <br><br>
+       <div class="container">
+           <div class="row">
+               
+           </div>
+       </div>
+        <div class='container'>
+            <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                            
+                        </div>
+                <div class="col-sm-8">
+                <form>
+                    <div class="container">
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <!add Telephone & E-mail >
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                            </div>
+    
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-2">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                        <label class="form-check-label" for="approve">
+                                            <strong>May We contact you?</strong>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 offset-md-1">
+                                    <select class="form-control">
+                                        <option>Tel.</option>
+                                        <option>Email</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                           <!Adding a textarea>
+                           <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="feedback" name="feedback" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <!Adding the Submit Button>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                    <input class="btn search-button search-visible-desktop btn btn-primary" type="button"data-toggle="modal" data-target="#myModal"  value=" &nbsp&nbsp Register&nbsp&nbsp&nbsp&nbsp&nbsp">   
+                                    <div class="modal fade" id="myModal" role="dialog">
+                                            <div class="modal-dialog modal-lg">
+                                              <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <h4>Confirm!!!</h4>
+                                                    </div>
+                                                
+                                                <div class="modal-body">
+                                                  <p>Registration Successful!</p>
+                                                </div>
+                                                  <button type="button" class="btn btn-default btn btn-primary" data-dismiss="modal">Close</button>
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                   <p></p>
+                                </div>
+                        </div>
+                    </div>    
+                    </form>
+                </div>
+            </div>    
+        </div>
+</body>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>    
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>   
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <script src="js/scripts.js"></script>
+
+</html>

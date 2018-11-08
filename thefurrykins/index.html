@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Furry Kins</title>
+    <link href="css/styles.css" rel="stylesheet">
+<!-- Required meta tags always come first -->   
+<meta charset="utf-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta http-equiv="x-ua-compatible" content="ie=edge">  
+
+<!-- Bootstrap CSS -->   
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<style>
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+           
+        }
+            section { 
+                display: block;
+            }
+            
+  .modal-header, h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  
+
+            </style>
+
+      
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top" style="background-color: rgb(29, 153, 161)">
+        <div class="container">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+           <a class="navbar-brand mr-auto" href="./index.html"><img src="images/logo.png" height="30" width="41"></a>
+           <div class="collapse navbar-collapse" id="Navbar">
+          
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                <!--    <li class="nav-item"><a class="nav-link" href="./pettingtips.html"><span class="fa fa-info fa-lg"></span>Petting tips</a></li>-->
+                    
+                    <li class="nav-item active"><a class="nav-link" id="Contact" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>-->
+                    <li class="nav-item active"><a class="nav-link" id="Aboutus" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About Us</a></li>
+                </ul>      
+              <!--  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                      </ul>-->
+    
+                        <span class="navbar-text navbar-nav navbar-right">
+                          <!--  <a data-toggle="modal"class="button btn btn-light" data-target="#loginModal" style="color:black">
+                            <span class="fa fa-sign-in"></span> 
+                          Login &nbsp
+                            </a>-->
+                            <a onclick="document.getElementById('id01').style.display='block'"  style="width:auto;">
+                            <span class="btn fa fa-sign-in"></span>Login</a>
+                        </span>
+                        
+                      <!--  <span class="navbar-text navbar-nav navbar-right">
+                            <a data-toggle="modal" class="button btn btn-primary" data-target="#loginModal">
+                                <span class="fa fa-user-o"></span>
+                          sign Up
+                    
+                        </span>-->
+
+                   
+                </div>
+            </div>
+            </nav>
+            
+          <!-- <div class="container">
+            <div class="tab-content">
+                <div id="home1" class="tab-pane active">
+                    <p>Note:</p>
+                   
+                </div>
+           </div>
+           </div>-->
+
+
+
+    <header class='jumbotron'style="background:  url(https://i.pinimg.com/originals/30/83/81/308381b039c111af78691c28311f9bdf.gif) no-repeat center center ; 
+    background-size:100% 100%;">
+        <div class='container'>
+               
+                      <div  style="color:rgb(5, 33, 34)  ;font: lighter;text-align: center">
+                             <h1 class="align-center" style="font-size: 150px">The Furry Kins</h1>
+                      </div>
+                                   
+                             
+
+                   
+               </div>
+        </div>
+        </header>
+         <!--Adding a row for the carousel -->
+                 
+        <div class="container">
+            <h1>Welcome to The Furry Kins</h1>
+            <p>We are here to present you the best way to congregate pet lovers who can
+                 lovingly board your pets while owners are on vacation.We are going to place your pets in loving hands</p>
+            <p>All you need to do is register with us and enter the dates that your furry mate needs to be boarded. </p>
+            <p>The "furry kins" as we call all the pet lovers ,just need to mention the dates,breed,sex and some required details of the pet needed to be boarded.
+                The pet lovers who are capable of boarding the pet, also register and input their available dates ,the pets they can handle and also the number.</p>
+                <h5>You are all set!!!!</h5>
+
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <h1>How all this Works?????</h1>
+            <p>When you are ready to book our services, first check our calendar for your preferred dates,
+                 then please call us directly to discuss scheduling and our very reasonable flat-rate pricing.</p>
+                 <p>After our initial phone consultation we will request to arrange a “meet & greet” (M&G) for you and your pet to
+                      see the property and "the furry kins".  Your pet can sniff around for as long as needed to get familiar with us and the home which we provide. 
+                       We can also use this opportunity to answer any specific questions and discuss any special needs your pet may have.​</p>
+        </div>
+                  <div class="container">
+                      <div class="row" style="height:50%">
+                              <div class="col-sm-4 col-md-4" style="color:black">
+                                  <img src="images/cat1.jpeg" class="img-fluid"style="height:100% ;width:100%">
+                               </div>
+                          <div class="col-sm-8 col-md-8 " style="color: black">
+                                     
+                              <h1>Pet Day care</h1>
+            <p>Pet daycare refers to a short-term daytime care for dogs. 
+                It fills a niche between multi-day kennel boarding and pet sitting, </p>
+                <p>where the sitter comes to the pet's home. It shares many similarities with a regular daycare for children, with the exception being that a pet daycare is for your furry darlings.
+             The two share the same philosophy. 
+              Parents, or in the case of the pet daycare, owners, have a busy schedule and the often prolonged hours at work drastically reduce the time that could be spent with their pets.</p>
+                   
+                          </div>
+                          </div>
+                          
+                         <!-- <div class="col-sm-4 col-md-4" style="color:black">
+                                <br>
+                                <br>
+                            <img src="images/groom1.jpeg" class="img-fluid"style="height:100% ;width:100%">
+                         </div>
+                    <div class="col-sm-8 col-md-8 " style="color: black">
+                            <br>
+                            <br>
+                        <h1>Pet Grooming</h1>
+      <p>While for many people the concept of grooming your pet conjures up notions of brushes and bows,
+           it is in fact a vital element to their overall health and wellbeing. Regularly grooming your animal allows
+            you to catch any underlying diseases or conditions early, meaning that they will be able to be treated quicker 
+            and more efficiently and will therefore be less likely to have any lasting effect on your pet.
+            However not all animals enjoy the grooming process and many owners find that it is easier to send their pet 
+            to a professional groomer on a regular basis instead. If you have a puppy or a kitten then training them to 
+            ensure the grooming process is an important part of their learning and will be beneficial to them as they reach maturity.    </p>
+                    </div>-->
+                     
+                    <br>
+                    <br>
+                    <div class="row" style="height:50%">
+                      <div class="col-sm-4 col-md-4" style="color:black">
+                            
+                        <img src="images/boarding.jpeg" class="img-fluid"style="height:100% ;width:100%">
+                     </div>
+                <div class="col-sm-8 col-md-8 " style="color: black">
+                                            <h1>Pet Boarding</h1>
+  <p>This is a place where dogs or cats are housed temporarily for a fee, an alternative to using a pet sitter. 
+      Although many people worry about the stress placed on the animal by being put in an unfamiliar and most likely crowded environment,
+       the majority of boarding kennels work to reduce stress.</p> 
+       <p>Many kennels offer one-on-one "play times" in order to get
+        the animal out of the kennel environment. Familiar objects, such as blankets and toys from home, are also permitted at many kennels.
+         Similarly, many kennels nowadays also offer grooming and training services in addition to boarding, with the idea being that
+          the kennel can be the owner's "one-stop shop" for all three services</p>
+                </div>
+                  </div>
+                   
+                    
+                      </div>
+                      
+                      <br> 
+                      <div class="container">
+                            <div class="header align-center">
+                              <div class="section center">
+                                  <div class="header-text hero-reversed">
+                                      <h3>Get Pet Sitters for<br/>Cat Sitting & Dog Home Boarding</h3>
+                                  
+                                      <div class="search-section center">
+                                         
+                                          <select name="country" id="locate"  class="country_search ">
+                                              <option selected disable hidden>Sitting,or Boarding?&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+                                              <option>Pet Boarding</option>
+                                              <option>Pet Sitting</option>
+                                              <option>Pet Daycare</option>
+                                             
+                                          </select>
+                                          <input class="btn search-button search-visible-desktop btn btn-primary" type="button"data-toggle="modal" data-target="#myModal"  value="Get Pet Service">   
+                                          <!--<button class="btn search-button search-visible-mobile" class="btn btn-primary"><i class="icon-search"></i></button>-->
+                                          <div class="modal fade" id="myModal" role="dialog">
+                                              <div class="modal-dialog modal-lg">
+                                                
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h4>Response!!!</h4>
+                                                      </div>
+                                                   
+                                                   
+                                                  
+                                                  <div class="modal-body">
+                                                    <p>Our representatives will contact you asap!</p>
+                                                  </div>
+                                                  
+                                                    <button type="button" class="btn btn-default btn btn-primary" data-dismiss="modal">Close</button>
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                           <br>
+                           <br>    
+                           <div id="id01" class="modal">
+  
+                            <form class="modal-content animate" action="/action_page.php">
+                              <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+                              </div>
+                          
+                              <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                          
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                  
+                              <a href="./index.html" class="btn btn-success btn btn-block">Login</a>
+                                <label>
+                                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                                <br>
+                                <p>Not a User?&nbsp&nbsp&nbsp
+                                <a href="./register.html" class="btn btn-info btn-success btn-md" role="button">Register</a></p>
+                              </div>
+                          
+                              <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                            </form>
+                          </div>
+                          
+                          <script>
+                          // Get the modal
+                          var modal = document.getElementById('id01');
+                          
+                          // When the user clicks anywhere outside of the modal, close it
+                          window.onclick = function(event) {
+                              if (event.target == modal) {
+                                  modal.style.display = "none";
+                              }
+                          }
+                          </script>
+                          
+                                   
+         <footer class='footer'>
+        <div class='container'>
+        <div class='row'> 
+               <!--   <div class=“col-4 offset-1 col-sm-2”>
+                          <h5>Links</h5>
+            <ul class='list-unstyled'>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+                  </div>
+        <div class='col-7 col-sm-5'>
+        <h5>Our Address</h5>
+        <address>
+        121, , RTC “X” Road<br>
+        Narayanguda, Near Traffic Signal<br>
+        HYDERABAD<br>
+                 <i class="fa fa-phone fa-lg"></i>:  +852 1234 5678 <br>
+                 <i class="fa fa-fax fa-lg"></i>:+852 8765 4321<br>
+                 <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:admin@furrykins.net">admin@thefurrykins.net</a>
+                 </address>
+        </div>-->
+        <div class='col-12 col-sm-4 align-center'> 
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </div>
+        <div class='col-12 col-sm-4 align-center'> 
+            
+                    <div class='text-center'>
+                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                     </div>
+            </div>
+            </div>
+            <div class='row justify-content-center'> 
+            <div class='col-auto'>
+            <p>© Copyright 2018 THE FURRY KINS</p>
+            </div>
+          </div>
+          </div>
+            </footer>
+            
+       
+           
+
+
+
+ 
+
+</body>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->  
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>    
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>   
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <script src="js/scripts.js"></script>
+
+
+</html>

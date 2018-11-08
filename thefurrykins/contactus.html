@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Furry Kins</title>
+    <link href="css/styles.css" rel="stylesheet">
+<!-- Required meta tags always come first -->   
+<meta charset="utf-8">   
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta http-equiv="x-ua-compatible" content="ie=edge">  
+
+<!-- Bootstrap CSS -->   
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<style>
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+    
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+    
+    .container {
+        padding: 16px;
+    }
+    
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+    
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+    }
+        
+    @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+    
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+               
+            }
+                section { 
+                    display: block;
+                }
+                
+      .modal-header, h4, .close {
+          background-color: #5cb85c;
+          color:white !important;
+          text-align: center;
+          font-size: 30px;
+      }
+      .modal-footer {
+          background-color: #f9f9f9;
+      }
+      
+    
+                </style>
+    
+     
+</head>
+
+<body style="background-image:url(images/jumbo2.png); background-size:80%;">
+        <nav class="navbar navbar-dark navbar-expand-sm sticky-top" style="background-color: rgb(29, 153, 161)">
+                <div class="container">
+        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                   <a class="navbar-brand mr-auto" href="./index.html"><img src="images/logo.png" height="30" width="41"></a>
+                   <div class="collapse navbar-collapse" id="Navbar">
+                  
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <!--    <li class="nav-item"><a class="nav-link" href="./pettingtips.html"><span class="fa fa-info fa-lg"></span>Petting tips</a></li>-->
+                            
+                            <li class="nav-item active"><a class="nav-link" id="Contact" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                            <!--<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>-->
+                            <li class="nav-item active"><a class="nav-link" id="Aboutus" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About Us</a></li>
+                        </ul>      
+                      <!--  <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                              </ul>-->
+            
+                              <span class="navbar-text navbar-nav navbar-right">
+                                    <!--  <a data-toggle="modal"class="button btn btn-light" data-target="#loginModal" style="color:black">
+                                      <span class="fa fa-sign-in"></span> 
+                                    Login &nbsp
+                                      </a>-->
+                                      <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                                      <span class="btn fa fa-sign-in"></span>Login</a>
+                                  </span>
+                                  
+                               
+                                
+                              <!--  <span class="navbar-text navbar-nav navbar-right">
+                                    <a data-toggle="modal" class="button btn btn-primary" data-target="#loginModal">
+                                        <span class="fa fa-user-o"></span>
+                                  sign Up
+                            
+                                </span>-->
+        
+                           
+                        </div>
+                    </div>
+                    </nav>
+               
+            <header>
+                <br>
+                <br>
+                <div class="container">
+                    <h1 style="font-family:serif">How Can We Help You Today?</h1>
+                    <p>We take great pride in our accessibility and reachability.  Feel free to send in a note using the form below</p>
+                    <p>You will hear back from us quite soon.</p>
+                    <div class="row">
+                    <div class="col-sm-6 col-md-6 " style="color: black">
+                            <form>
+                                    <div class="form-group row">
+                                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <!add Telephone & E-mail >
+                                    <div class="form-group row">
+                                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                                        <div class="col-5 col-md-3">
+                                            <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                                        </div>
+                                        <div class="col-7 col-md-7">
+                                            <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                                        <div class="col-md-10">
+                                            <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <br>
+                                                <div class="col-5 col-md-3">
+                                                <label for="exampleTextarea">How&nbspCan&nbspWe&nbspHelp&nbspYou&nbspToday?</label>
+                                            </div>
+                                                <div class="col-md-10">
+                                                <textarea class="form-control" id="exampleTextarea" rows="3" cols="50"></textarea>
+                                                <br>.
+                                                <button type="button" class="btn btn-danger">Send&nbspin&nbspmy&nbspnote!</button>
+                                              </div>
+                                            </div>
+                                    </div>
+                                       
+                                </form>
+                </div>
+                <div class="col-sm-3 col-md-3 " style="color: black">
+                    <br>
+                </div>
+                                <div class="col-sm-3 col-md-3 " style="color: black">
+                                        <img src="images/contact1.jpeg" class="img-fluid"style="height:100% ;width:100%">
+                    </div>
+                </div>
+                    </div>
+                    </header>
+                   
+          <!-- <div class="container">
+            <div class="tab-content">
+                <div id="home1" class="tab-pane active">
+                    <p>Note:</p>
+                   
+                </div>
+           </div>
+           </div>-->
+         <!--form starts here-->
+         <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <!--<img src="img_avatar2.png" alt="Avatar" class="avatar">-->
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <a href="./index.html" class="btn btn-success btn btn-block">Login</a>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    <br>
+                    <p>Not a User?&nbsp&nbsp&nbsp
+                    <a href="./register.html" class="btn btn-info btn-success btn-md" role="button">Register</a></p>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+              
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+              
+       
+        <footer class='footer bg-light'>
+        <div class='container'>
+        <div class='row'> 
+                
+                 
+        <div class='col-7 col-sm-4'>
+        <h5>We are at</h5>
+        <address>
+        568, Jubilee Hills<br>
+        HYDERABAD
+        <br>
+        <i class="fa fa-phone fa-lg"></i>:  +91 95895 85678 <br>
+        <i class="fa fa-fax fa-lg"></i>:+91 89765 43251<br>
+        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:admin@thefurrykins.net">admin@thefurrykins.net</a>
+                 </address>
+        </div>
+
+        <div class='col-5 col-sm-4 align-self-center'> 
+            
+                    <div class='text-center'>
+                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                <br>
+                <br>
+                     </div>
+                    
+                     <div class='text-center'>
+                        <div class="btn-group">
+                            
+            
+                                <button type="button" class="btn btn-primary"><i class="fa fa-phone"></i>&nbspCall</button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-skype"></i>&nbspSkype</button>
+                                <button type="button" class="btn btn-warning"><i class="fa fa-envelope"></i>&nbspEmail</button>
+                              </div>
+                 </div>
+               <br>
+            </div>
+            </div>
+            <div class='row justify-content-center'> 
+            <div class='col'>
+            <marquee><p>© Copyright 2018 The Furry Kins</p></marquee>
+            </div>
+          </div>
+          </div>
+            </footer>
+            
+       
+           
+
+
+
+</body>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->  
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>    
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>   
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+ <script src="js/scripts.js"></script>
+
+
+</html>
