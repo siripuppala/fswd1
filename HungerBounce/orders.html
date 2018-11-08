@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title></title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/style1.css" rel="stylesheet">
+    <style>
+        bg-img{
+            background-image: url(images/offe.html);
+            align-self: center;
+        }
+        body {
+          padding-top: 0;
+          margin-right: 10px;
+          margin-left: 10px;
+          margin-top: 5px;
+          margin-top: 5px;
+  }	
+  .carousel .carousel-inner img {
+  width: 100%;
+  height: 30em;
+  object-fit:fill;
+  overflow: hidden;
+}
+h4{
+  padding-left:70px; 
+}
+.carousel .carousel-inner img {
+  width: 100%;
+  margin: 0,0,0,0;
+  padding: 0,0,0,0;
+  height: 20em;
+
+  object-fit:fill;
+  overflow: hidden;
+}
+        
+    </style>
+    <body>
+
+
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <div class="col-sm-6">
+                      <a class="navbar-brand" href="#" style="font-family:sans-serif; font-size: 26px"><i class="fa fa-cutlery" aria-hidden="true" style="color:"></i>
+
+                        <span style="color: rgb(12, 209, 71)">Hunger</span> <b style="color:chocolate">Bounce</b></a>                    </div>
+                       <div class="col-sm-6">
+                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="box-sizing:border-box ">
+                         <span>Menu</span>
+                         </button>
+                           <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                         <ul class="navbar-nav"> 
+                               <li class="nav-item">
+                                       <a class="nav-link" href="#"></a>
+                                     </li>
+                            <li class="nav-item" >
+                             <a class="nav-link" href="Good.html"><i class="fa fa-home" aria-hidden="true"></i>
+                               Home</a>
+                            </li>
+                            <li class="nav-item">
+                             <a class="nav-link" href="about.html"><i class="fa fa-info" aria-hidden="true"></i>
+                              About Us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="help.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                Contact  </a>
+                             </li>  
+                            <li>
+                                   <a class="nav-link active" href="orders.html"><i class="fa fa-book" aria-hidden="true"></i>
+                                       Order</a>
+                           </li> 
+                         </ul>
+                       </div>  
+                    </div>
+                     </nav>       
+                      <div class="container">
+                      <div class="row" style="background-color: whitesmoke">
+                        <div class="col">
+                         <div id="demo" class="carousel slide" data-ride="carousel">
+               
+                                <!-- Indicators -->
+                                
+               
+                           <!-- The slideshow --> <center><h3>Menu</h3></center>
+                           <div class="carousel-inner" >
+                              <div class="carousel-item active">
+                              <a href="orders.html">
+                             <img src="images\offe.jpg" alt="offer1"  style=" width: 100%"></a>
+                                 </div>
+                                
+                                    <div class="carousel-item">
+                                     <a href="orders.html">
+                                 <img src="images\o3.png" alt="offer3" style=" width: 100%"></a>
+                                 </div>
+                                 
+                               </div>
+               
+                            <!-- Left and right controls -->
+                                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                                     </a>
+                                   <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                             </a>
+                           </div>
+                     </div>
+                     </div> 
+                     </div>
+
+
+                          <!--tabs-->
+                          <div class="container">
+                              <div class="row" style="background-color:green ">
+                                       <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Home" role="tab" aria-controls="home" aria-selected="true">Popular</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#About" role="tab" aria-controls="profile" aria-selected="false">Snacks</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#Contact" role="tab" aria-controls="contact" aria-selected="false">Meals</a>
+                                        </li>
+                                       </ul>
+                                         </div> 
+                                         <div class="row"> 
+                                            <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="Home" role="tabpanel" aria-labelledby="home-tab"> 
+                                             <div class="container">
+                                               <div class="row">
+                                                  <div class="col-sm-4">
+                                                    <div class="thumbnail">
+                                                      
+                                                        <img src="images/fruitsalad.jpg" alt="Fruit Salad" style="width:100%;height: 300px;">
+                                                        <div class="caption">
+                                                          
+                                                            <h3>Fruit Salad</h3>
+                                                               <h4>₹60</h4> 
+                                                               <div class="row">
+                                                               
+                                                               <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                </div>  
+                                                              </div>
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="thumbnail">
+                                                    
+                                                        <img src="images/idly.jpg" alt="Idly Sambar" style="width:100%;height: 300px;">
+                                                        <div class="caption">
+                                                            
+                                                                <h3> Idly Sambar</h3>
+                                                                <h4>₹65</h4>
+                                                                <div class="row">
+                                                                    <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="thumbnail">
+                                                     
+                                                        <img src="images/roti.jpg" alt="Roti" style="width:100%;height: 300px;">
+                                                        <div class="caption">
+                                                          <h3>Roti</h3>
+                                                          <h4>₹58</h4>
+                                                          <div class="row">
+                                                                    <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                </div>
+                                                        </div>
+          
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                      
+                                               <div class="row">
+                                                 <div class="col-sm-4">
+                                                    <div class="thumbnail">
+                                                        
+                                                                <img src="images/dosa.jpg" alt="dosa" style="width:100%;height: 300px;">
+                                                                 <div class="caption">
+                                              
+                                                <h3>Dosa</h3>
+                                                   <h4>₹60</h4> 
+                                                   <div class="row">
+                                      
+                                                   <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                    </div>  
+                                                  </div>
+                                                     </a>
+                                               </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                         
+                                            <img src="images/corn.jpg" alt="spicy corn chowder" style="width:100%;height: 300px;">
+                                            <div class="caption">
+                                                
+                                                    <h3> spinatch corn chowder</h3>
+                                                    <h4>₹65</h4>
+                                                    <div class="row">
+                                                        <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                    </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="thumbnail">
+                                         
+                                            <img src="images/pongal.jpg" alt="pongal" style="width:100%;height: 300px;">
+                                            <div class="caption">
+                                              <h3>pongal</h3>
+                                              <h4>₹60</h4>
+                                              <div class="row">
+                                                        <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                    </div>
+                                            </div>
+          
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                  </div> 
+                              
+                                              <div class="tab-pane fade" id="About" role="tabpanel" aria-labelledby="profile-tab">   
+                                                      <div class="container">
+                                                              <div class="row">
+                                                                 <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                    
+                                                                       <img src="images/p1.png" alt="Strawberry oreo whiril" style="width:100%;height: 300px;">
+                                                                       <div class="caption">
+                                                                         
+                                                                           <h3>Strawberry oreo whiril</h3>
+                                                                              <h4>₹228</h4> 
+                                                                              <div class="row">
+                                                                              
+                                                                              <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                               </div>  
+                                                                             </div>
+                                                                     </a>
+                                                                   </div>
+                                                                 </div>
+                                                                 <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                     
+                                                                       <img src="images/p2.png" alt="Mexicon Aloo Wrap" style="width:100%;height: 300px;">
+                                                                       <div class="caption">
+                                                                           
+                                                                               <h3> Mexicon Aloo Wrap</h3>
+                                                                               <h4>₹65</h4>
+                                                                               <div class="row">
+                                                                                   <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                               </div>
+                                                                       </div>
+                                                                     </a>
+                                                                   </div>
+                                                                 </div>
+                                                                 <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                              
+                                                                       <img src="images/p3.png" alt="chatpata Naan Aloo" style="width:100%;height: 300px;">
+                                                                       <div class="caption">
+                                                                         <h3>chatpata Naan Aloo</h3>
+                                                                         <h4>₹158</h4>
+                                                                         <div class="row">
+                                                                                   <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                               </div>
+                                                                       </div>
+                         
+                                                                     </a>
+                                                                   </div>
+                                                                 </div>
+                                                               </div>
+                                                     
+                                                              <div class="row">
+                                                                <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                    
+                                                                               <img src="images/p4.png" alt="panner Wrap" style="width:100%;height: 300px;">
+                                                                                <div class="caption">
+                                                             
+                                                               <h3>Panner Wrap</h3>
+                                                                  <h4>₹160</h4> 
+                                                                  <div class="row">
+                                                                  
+                                                                  <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                   </div>  
+                                                                 </div>
+                                                                    </a>
+                                                              </div>
+                                                     </div>
+                                                     <div class="col-sm-4">
+                                                       <div class="thumbnail">
+                                                         
+                                                           <img src="images/p5.jpg" alt=" corn roll" style="width:100%;height: 300px;">
+                                                           <div class="caption">
+                                                               
+                                                                   <h3>  corn roll</h3>
+                                                                   <h4>₹100</h4>
+                                                                   <div class="row">
+                                                                       <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                   </div>
+                                                           </div>
+                                                         </a>
+                                                       </div>
+                                                     </div>
+                                                     <div class="col-sm-4">
+                                                       <div class="thumbnail">
+                                                       
+                                                           <img src="images/p6.jpg" alt="Fruit Pizza" style="width:100%;height: 300px;">
+                                                           <div class="caption">
+                                                             <h3>Fruit Pizza</h3>
+                                                             <h4>₹99</h4>
+                                                             <div class="row">
+                                                                       <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; " >Order</button>
+                                                                   </div>
+                                                           </div>
+                         
+                                                         </a>
+                                                       </div>
+                                                     </div>
+                                                   </div>
+                                                   </div>
+                                                 </div>                 
+                                              
+                                              <div class="tab-pane fade" id="Contact" role="tabpanel" aria-labelledby="contact-tab"> 
+                                                      <div class="container">
+                                                              <div class="row">
+                                                                 <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                     
+                                                                       <img src="images/m1.jpg" alt="Capsicum pulao" style="width:100%;height: 300px;">
+                                                                       <div class="caption">
+                                                                         
+                                                                           <h3>Capsicum pulao</h3>
+                                                                              <h4>₹60</h4> 
+                                                                              <div class="row">
+                                                                              
+                                                                              <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; " >Order</button>
+                                                                               </div>  
+                                                                             </div>
+                                                                     </a>
+                                                                   </div>
+                                                                 </div>
+                                                                 <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                   
+                                                                       <img src="images/m2.jpg" alt="Kerela malabar parota" style="width:100%;height: 300px;">
+                                                                       <div class="caption">
+                                                                           
+                                                                               <h3> Kerela malabar parota</h3>
+                                                                               <h4>₹65</h4>
+                                                                               <div class="row">
+                                                                                   <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                               </div>
+                                                                       </div>
+                                                                     </a>
+                                                                   </div>
+                                                                 </div>
+                                                                 <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                 
+                                                                       <img src="images/m3.jpg" alt="Mixed Vegetable Rice" style="width:100%;height: 300px;">
+                                                                       <div class="caption">
+                                                                         <h3>Mixed Vegetable Rice</h3>
+                                                                         <h4>₹58</h4>
+                                                                         <div class="row">
+                                                                                   <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                               </div>
+                                                                       </div>
+                         
+                                                                     </a>
+                                                                   </div>
+                                                                 </div>
+                                                               </div>
+                                                     
+                                                              <div class="row">
+                                                                <div class="col-sm-4">
+                                                                   <div class="thumbnail">
+                                                                   
+                                                                               <img src="images/m4.jpg" alt="Curd Rice" style="width:100%;height: 300px;">
+                                                                                <div class="caption">
+                                                             
+                                                               <h3>Curd Rice</h3>
+                                                                  <h4>₹40</h4> 
+                                                                  <div class="row">
+                                                                  
+                                                                  <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; " >Order</button>
+                                                                   </div>  
+                                                                 </div>
+                                                                    </a>
+                                                              </div>
+                                                     </div>
+                                                     <div class="col-sm-4">
+                                                       <div class="thumbnail">
+                                                     
+                                                           <img src="images/m5.jpg" alt="" style="width:100%;height: 300px;">
+                                                           <div class="caption">
+                                                               
+                                                                   <h3> Tomato Rice</h3>
+                                                                   <h4>₹65</h4>
+                                                                   <div class="row">
+                                                                       <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; " >Order</button>
+                                                                   </div>
+                                                           </div>
+                                                         </a>
+                                                       </div>
+                                                     </div>
+                                                     <div class="col-sm-4">
+                                                       <div class="thumbnail">
+                                                         
+                                                           <img src="images/m6.jpg" alt="palak panner" style="width:100%;height: 300px;">
+                                                           <div class="caption">
+                                                             <h3>Palak Panner</h3>
+                                                             <h4>₹60</h4>
+                                                             <div class="row">
+                                                                       <button type="button" class="btn btn-success" onclick="getConfirmation();" style="margin-left:60px; ">Order</button>
+                                                                   </div>
+                                                           </div>
+                         
+                                                         </a>
+                                                       </div>
+                                                     </div>
+                                                   </div>
+                                                   </div>
+                                                 </div> 
+                                                  </div>                                 
+                                  
+                          
+                                              </div>
+                                  </div>
+                              </div>
+
+
+      
+                              <script type="text/javascript">
+                                
+                                   function getConfirmation(){
+                                      var retVal = confirm("Press Ok to go ahead with the order ?");
+                                      if( retVal == true ){
+                                        var person = prompt("Please enter address to deliver");
+                                        var no=prompt("enter your phone number");
+                                        if (person != null && no!=null) {
+                                                alert("Thank you for ordering the food");
+                                                                                
+                                         return true;
+                                      }
+                                   }
+                                   }
+                             </script>
+                                                     
+     <footer style="background-color: gray">
+        <div class='row justify-content-center'> 
+            <div class='col-auto'>
+            <h3>Cash on delivery</h3>
+            <h3>Delivery charges ₹60</h3>
+            </div>
+          </div>
+          </div>
+     </footer>              
+      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    </body>
+    </head>
+    </html>

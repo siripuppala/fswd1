@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/style1.css" rel="stylesheet">
+<style>
+  body {
+  padding-top: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  }	
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+body {
+         padding-top: 0;
+        margin-right: 10px;
+        margin-left: 10px;
+
+  }	
+
+#bg {
+    /* The image used */
+          background-image: url(images/b10.jpg);
+    /* Full height */
+    height: 100%; 
+    color: white;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 30px;
+    
+}
+       
+      .bg-cover{
+      background-image: url(images/b1.jpg);
+      width: 100%;
+  }
+   #button{
+    width: 100em;
+    border: 2px solid green;
+    background:  green;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    margin-left:1000px;
+  }
+  
+</style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <div class="col-sm-6">
+                    <a class="navbar-brand" href="#" style="font-family:sans-serif; font-size: 26px"><i class="fa fa-cutlery" aria-hidden="true" style="color:"></i>
+
+                        <span style="color: rgb(12, 209, 71)">Hunger</span> <b style="color:chocolate">Bounce</b></a>
+                     </div>
+                   <div class="col-sm-6">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="box-sizing:border-box ">
+                     <span>Menu</span>
+                     </button>
+                       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                     <ul class="navbar-nav"> 
+                           <li class="nav-item">
+                                   <a class="nav-link" href="#"></a>
+                                 </li>
+                        <li class="nav-item" >
+                         <a class="nav-link" href="Good.html"><i class="fa fa-home" aria-hidden="true"></i>
+                           Home</a>
+                        </li>
+                        <li class="nav-item ">
+                         <a class="nav-link" href="about.html"><i class="fa fa-info" aria-hidden="true"></i>
+                           About Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="help.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                Contact</a>
+                         </li>  
+                        <li class="nav-item">
+                               <a class="nav-link" href="orders.html"><i class="fa fa-book" aria-hidden="true"></i>
+                                   Order</a>
+                       </li> 
+                     </ul>
+                   </div>  
+                </div>
+                 </nav>   
+    
+    
+         <div class="container">   
+         <div class="row">
+            <div class="col">
+              <a href="#help"><button style="background-color: rgb(25, 230, 42);-webkit-text-fill-color:white;width: 20%;font-size:large;border-radius: 16px;">help</button></a>
+            </div>
+          </div>
+         <div class="container" >
+            <div class="jumbotron bg-cover" >
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+             </div>
+                    <div class="col-sm-6">
+                                <b><span><i class="fa fa-envelope-o" aria-hidden="true"></i>  Email Support:</span></b>
+                                         Email us at <a href="support@grabfood.in">support@grabfood.in</a>
+                                        <br>
+                                        <br><br>
+                            </div>
+
+                           <div class="col-sm-12">
+                               <b><i class="fa fa-location-arrow" aria-hidden="true"></i> Address:</b><br>
+    8-2-293/82/j-11/550-1,<br>
+    Garden cafe Apollo organic-food-restaurants<br>
+    Apollo Hospital,<br>
+    Road Number 92,Film Nagar,<br>
+    Hyderabad,Telangana 500033.    <br>
+    <br>
+    <h1>You can locate us at</h1>
+                            <a href="https://goo.gl/maps/CwD9HS92ugq">
+                            <img src="images/map.png" style="width:100%"></a>
+                               
+                           </div>
+                       </div>         
+             
+             <div class="row"  style="margin-bottom:80px; ">
+              <div class="col-12">
+                <br>
+                    <h1 style="color:black;text-align: center">We Would Always Love To Hear From YOU</h1>      
+
+                  <!--Form goes here-->
+<br>
+                  <form   id="bg" style="font-size:25px;padding-right: 10px;">
+                      <div class="form-group row">
+                        
+                          <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                          </div>
+                      </div>
+                      <!--add Telephone & E-mail-->
+                      <div class="form-group row">
+                          <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                          <div class="col-5 col-md-3">
+                              <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                          </div>
+                          <div class="col-7 col-md-7">
+                              <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                          <div class="col-md-10">
+                              <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                          </div>
+  
+                          <div class="form-group row">
+                              <div class="col-md-6 offset-md-2">
+                                  <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                      <label class="form-check-label" for="approve">
+                                          <strong>How to contact you?</strong>
+                                      </label>
+                                  </div>
+                              </div>
+                              
+                              <div class="col-md-3 offset-md-1">
+                                  <select class="form-control">
+                                      <option>Tel.</option>
+                                      <option>Email</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                         <!--Adding a textarea-->
+                         <div class="form-group row">
+                          <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                          <div class="col-md-10">
+                              <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                          </div>
+                      </div>
+                      <!--Adding the Submit Button-->
+                      <div class="form-group row">
+                          <div class="offset-md-2 col-md-10">
+                              <button type="submit" class="btn btn-primary">Send Feedback</button>
+                          </div>
+                      </div> 
+                      
+                  </form>
+                
+              </div>
+            </div>
+            
+                 <br>
+                 <br>
+                  <br>
+                 <br>
+                 <div class="row">
+                   <div class="col">
+                    <br><br>
+                   </div>
+                 </div>
+                 <div class="row" style="background-image: url(images/food.jpg)">
+
+                   <div class="col">
+                     <br>
+       <font style="text-align: center;color: whitesmoke;"><h1><a name="help">Help</a></h1></font>
+                      <br>                     
+                  </div>
+                </div>
+                  <div class="row">
+                        <div class="col">
+                          <a href="#top"><button style="background-color: rgb(25, 230, 42);-webkit-text-fill-color:white;width: 20%;font-size:large;border-radius: 20px;padding-right: 10px;">Contact</button></a> 
+                        </div>
+                      </div>
+                  <br>
+
+        <div class="row">
+        <button class="accordion">I have a query related to placing an order</button>
+        <div class="panel">
+          <p>For help,please call on 022-6600 0666</p>
+        </div>
+
+        <button class="accordion">I have a payment or refund related query</button>
+        <div class="panel">
+          <p>For help, please call on 022-6600 0666</p>
+        </div>
+
+        <button class="accordion">I have a coupon related query</button>
+        <div class="panel">
+          <p>For help, please call on 022-6600 0666</p>
+        </div>
+
+
+        <button class="accordion">I want to know store contact no and address</button>
+        <div class="panel">
+          <p>For help, please call on 022-6600 0666</p>
+        </div>
+
+
+        <button class="accordion">I want to know store nearby my Home</button>
+        <div class="panel">
+                <font color="red"><a href="https://www.makemytrip.com/blog/top-organic-food-restaurants-in-india">FIND STORES</a></font>
+        </div>
+
+
+        <button class="accordion">I want to give Feedback or complaint</button>
+        <div class="panel">
+          <p>For help, please call on 022-6600 0666</p>
+        </div>
+        </div>
+    </div>   
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->  
+     <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>    
+         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>   
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</div>
+</body>
+</html>

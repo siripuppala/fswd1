@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="css/style1.css" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<style>
+  body {
+  padding-top: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-top: 5px;
+
+  }	
+  .bg-cover{
+      background-image: url(images/food.jpg)
+  }
+  .list-unstyled{
+    display: list-item;
+    
+  }
+  #button{
+    width: 6em;
+    border: 2px solid green;
+    background: cyan;
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+  }
+  .carousel .carousel-inner img {
+  width: 100%;
+  margin: 0,0,0,0;
+  padding: 0,0,0,0;
+  height: 20em;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+  </style>
+</head>
+ <body>   
+         <nav class="navbar navbar-expand-md bg-dark navbar-dark" style="margin-bottom: 0;" >
+             <div class="col-sm-6">
+              <a class="navbar-brand" href="#" style="font-family:sans-serif; font-size: 26px"><i class="fa fa-cutlery" aria-hidden="true" style="color:"></i>
+
+                <span style="color: rgb(12, 209, 71)">Hunger</span> <b style="color:chocolate">Bounce</b></a>
+             </div>
+                <div class="col-sm-6">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="box-sizing:border-box ">
+                  <span>Menu</span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav"> 
+                        <li class="nav-item">
+                                <a class="nav-link" href="#"></a>
+                              </li>
+                     <li class="nav-item" >
+                      <a class="nav-link active" href="Good.html"><i class="fa fa-home" aria-hidden="true"></i>
+                        Home</a>
+                     </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="About.html"><i class="fa fa-info" aria-hidden="true"></i>
+                        About us</a>
+                     </li>
+                     <li class="nav-item">
+                            <a class="nav-link" href="help.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+                                Contact </a>
+                      </li>  
+                      
+                     <li>
+                            <a class="nav-link" href="orders.html"><i class="fa fa-book" aria-hidden="true"></i>
+                                Order</a>
+                    </li> 
+                    
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a href="#" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
+                        
+                  </ul>
+    
+                </div>  
+             </div>
+              </nav>       
+   <div class="container-fluid"  >
+     <div class="row" style="background-color: white">
+       
+       <div class="col-sm-6">
+         <!--login-->
+
+          <div id="id01" class="modal">
+            
+            <form class="modal-content animate">
+              <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class="row">
+                  <div class="col-sm-3">
+                     <h1><i class="fa fa-user-circle" aria-hidden="true"></i></h1> 
+                  </div>
+                  <div class="col-sm-8">
+                    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>  
+                   <!-- <h1 style="float: right;padding-right: 3rem"><a href="#">Register</a></h1>-->
+                  </div>
+               </div>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit" >Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                      <span class="psw"><a href="#">Forgot password?</a></span>
+                  
+               
+              </div>
+            </form>
+            <div id="id02" class="modal">
+            <form class="modal-content animate">
+              <div class="container">
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter Firstname" name="fname" required>
+          
+                <label for="uname"><b>User Name</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                <label for="email"><b>Email id</b></label>
+                <input type="text" placeholder="something@gmail.com" name="email" required>
+          
+              <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Register</button>
+                
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+            </form>
+          </div>
+          </div>
+          
+         
+          </div>
+          <script>
+            // Get the modal
+            var modal1 = document.getElementById('id02');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal1) {
+                    modal.style.display = "none";
+                }
+            }
+           
+            </script>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+         
+          </script>
+          
+       </div>
+       </div>
+       <div class="jumbotron jumbotron bg-cover" style="margin-top: 0;">
+    <div class="overlay"></div>
+    <div class="container">
+    <div class="row">
+    <div class="col">
+      <h1 class="display-3 mb-1">"Health is Wealth"</h1>
+      
+      <p class="lead" style="color: white">
+      <span>
+               When your diet is wrong 
+                  Medicine is of no use
+                     when your diet is correct 
+                       Medicine is of no need
+                      </span><br></p>
+                      <p style="font-family: sans-serif;color:rgb(0, 255, 34);font-size: 32px">Good Food <i class="fa fa-heartbeat" aria-hidden="true" style="color: red"></i>
+          <b  style="color: rgb(231, 21, 84);font-family: sans-serif">Good Life</b></p>
+
+      </div>   
+     </div>                
+                  
+                     <b style="font-family: sans-serif ;color:chartreuse ;">we Ensure You hygienic and healthy food</b>
+
+    </div>
+</div>
+  
+  <div class="container">
+      <div class="row">
+      <div class="col">
+      <a href="orders.html"> <button style="background-color: rgb(25, 230, 42);-webkit-text-fill-color:white;width: 20%;font-size:large;border-radius: 16px; ">Order Now</button></a>
+        </div>
+      </div>
+     <div class="row" style="background-color: whitesmoke">
+         <div class="col">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+                 <!-- Indicators -->
+                 
+
+            <!-- The slideshow --> <center><h3>Menu</h3></center>
+            <div class="carousel-inner" >
+               <div class="carousel-item active">
+               <a href="orders.html">
+              <img src="images\of1.png" alt="offer1"  style=" width: 100%"></a>
+                  </div>
+                 <div class="carousel-item">
+                  <a href="orders.html">
+                           <img src="images\of2.png" alt="offer2"  style=" width: 100%"></a>
+                 </div>
+                     <div class="carousel-item">
+                      <a href="orders.html">
+                  <img src="images\of3.png" alt="offer3" style=" width: 100%"></a>
+                  </div>
+                  
+                </div>
+
+             <!-- Left and right controls -->
+                      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                   <span class="carousel-control-prev-icon"></span>
+                      </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+             <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+      </div>
+      </div> 
+   </div>    
+   <footer class='footer' style="background-color: rgb(90, 89, 89);color: white">
+        <div class='container'>
+        <div class='row'> 
+                  <div class='col-sm-4'>
+                        
+                        <ol>
+                            <h5>Links</h5>
+                        <li style="display: block"><a href="Good.html"></a>Home</a></li>
+                        <li style="display: block"><a href="about.html">About</a></li>
+                        <li style="display: block"><a href="help.html">Contact</a></li>
+                        <li style="display: block"><a href="orders.html">Order</a></li>
+                        </ol>
+                  </div>
+        <div class=' col-sm-4'>
+        <h5>Contact_us@</h5>
+        <address><br>
+         
+                 <i class="fa fa-phone fa-lg"></i>:  +852 1234 5678 <br><br>
+                 <i class="fa fa-fax fa-lg"></i>:+852 8765 4321<br><br>
+                 <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:admin@.net">admin@.net</a><br>
+                 <br>follow us @<i class="fa fa-twitter" aria-hidden="true"></i><a href=" twitter.com/yummywhees"> @yummywhees"</a><br><br>
+
+                 </address>
+        </div>
+
+        <div class='col-sm-4 align-self-center'> 
+            
+                    <div class='text-center'>
+                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                     </div>
+            </div>
+            </div>
+            <div class='row justify-content-center'> 
+            <div class='col-auto'>
+            <p>© Copyright 2018 project</p>
+            </div>
+          </div>
+          </div>
+     </footer>
+            
+       
+           
+
+
+
+
+         
+     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->  
+        <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>    
+            <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>   
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            $(function(){
+              $('.carousel').carousel({
+                interval:1000*4
+
+              })
+            })
+        </script>
+        
+    </body>
+</html>

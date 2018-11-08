@@ -1,0 +1,266 @@
+.body
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+}
+.site-wrapper
+{
+    width: 100%;
+    height: 100%;
+    background-image: url(stock/ARC.jpg);
+    background-color: antiquewhite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.site-wrapper .navbar a span:hover
+{
+ color: cadetblue;
+}
+.collapse ul li a
+{
+ 
+ font-size: 14px;
+ margin: 0px 10px;
+ color:white!important;
+ 
+ text-transform: uppercase;
+ letter-spacing: 1px;
+
+}
+.collapse ul li a:hover
+{
+    color:cadetblue !important;
+}
+.site-title
+{
+text-align:center;
+margin-top: 7%;
+height: 74vh;
+}
+.site-title
+{
+    font-size: 3px;
+    margin: 3% 0%;
+}
+.title-text
+{
+ font-family: quicksand;
+ text-align:start;
+ height: 3vh;
+ width: 100%;
+ font-size: 35px;
+ letter-spacing: 1px;
+ color:#00ffcc;
+ 
+}
+.site-title span
+{
+    font-family: quicksand;
+}
+ 
+.btn-sub2
+{   font-size:20px;
+    font-family: 'patua one';
+    border: 1px solid #EDF2f4;
+    background-color:cadetblue;
+    color: #EDF2f4;
+    border-radius: 3px;
+    transition: all 500ms ease;
+    cursor: pointer;
+    padding: 0.7em 1em;
+
+}
+/*----Albums---*/
+.content-1  h5
+{
+    font-size: 12px;
+    color: red;
+}
+.content-1 .title-border
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    display: block;
+    background-color: #EF233C;
+    border-radius: 50%;
+    margin: 1%;
+    margin-left: 35%;
+}
+/*--------Contents--------*/
+.content-1 .col-md-12 p
+{
+    font-size: 18px;
+    color: gray;
+}
+.content-1 .col-md-4 a
+{
+ text-decoration: none;
+}
+.content-1 .col-md-4 p
+{
+    font-size: 15px;
+}
+/*-------works-------------*/
+.container-fluid .works .title-border
+{
+
+    content: "";
+    width: 30%;
+    height: 2px;
+    display: block;
+    background-color: #EF233C;
+    border-radius: 50%;
+    margin: 1%;
+    margin-left: 35%;
+}
+.container-fluid .works
+{
+    margin-top: 25px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.works .row.no-gutters > [class*="col-"]
+{
+   
+    padding-right: 0;
+    padding-left: 0;
+}
+.img-wrapper
+{
+    overflow: hidden;
+}
+.img-wrapper img
+{
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.img-wrapper img:hover
+{
+    transform: scale(1.6);
+    cursor: zoom-out;
+}
+
+  
+
+/*-------content-2--------*/
+.content-2 .title-border
+{
+
+    content: "";
+    width: 30%;
+    height: 2px;
+    display: block;
+    background-color: #EF233C;
+    border-radius: 50%;
+    margin: 1%;
+    margin-left: 35%;
+}
+ .content-2 .row
+ {
+     margin: 8%;
+ }
+ .content-2 .member-1 .avatar
+ {
+     margin: 20px 0px;
+ }
+ .content-2 .curcle
+ {
+     border-radius: 100px;
+     width: 35%;
+     padding-top: 35px;
+     position: relative;
+     z-index: 4;
+ }
+ .content-2 .avatar span::after
+ {
+     content:"";
+     width: 90%;
+     height: 100px;
+     background-color:#EDF2F4;
+     position: absolute;
+     display:block;
+     top: 3px;
+     z-index: 0;
+ }
+ .content-2 .member-1 .discri .info
+ {
+   margin: 8%;
+   font-size: 14px;
+
+ }
+ .content-2 .social
+ {
+     background-color: #EDF2F4;
+     padding:4%;
+ }
+ .content-2 .social span
+ {
+     border: 1px solid rgb(123, 123,123);
+     padding: 4px 8px;.content-1 .col-md-12 p
+{
+    font-size: 18px;
+    color: gray;.content-1 .col-md-12 p
+    {
+        font-size: 18px;
+        color: gray;
+    }
+    .content-1 .col-md-4 a
+    {
+     text-decor
+}
+.content-1 .col-md-4 a
+{
+ text-decor
+     border-radius:40p.content-1 .col-md-12 p
+{
+    font-size: 18px;
+    color: gray;
+}
+.content-1 .col-md-4 a
+{
+ text-decor
+     cursor: pointer;
+     transition: all 5.content-1 .col-md-12 p
+{
+    font-size: 18px;
+    color: gray;
+}
+.content-1 .col-md-4 a
+{
+ text-decorms ease;
+ }
+
+/*---------------contact-us-------*/
+.content-3
+{
+    margin-bottom: 5%;
+}
+.content-3 span
+{
+    color:#EF233C;
+}
+.content-3 .row .title-border
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    display: block;
+    background-color: #EF233C;
+    border-radius: 50%;
+    margin: 1%;
+    margin-left: 35%;
+}
+
+
+/*----------------footer---------*/
+.text-center .d-flex span
+{
+ border: 1px solid cadetblue;
+ padding: 4px 8px;
+ border-radius: 40px;
+ cursor: pointer;
+}
